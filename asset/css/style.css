@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+:root{
+    --violet:#9356DC;
+    --rose:#FF79DA;
+    --vert-clair:#99E2D0;
+    --gris-clair:#EAEAEA;
+    --gris-foncé:#353535;
+    --gris-clair_clair:#7E7E7E;
+    --violet-clair: #915FDD;
+}
+wrap {
+    width:100%;
+    max-width: 1040px;
+    margin:0 auto;
+    padding: 0 1rem;
+}
+/* logo */
+.logo {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+/* barre de recherche */
+
+.search {
+    background: var(--gris-clair);
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#header .wrap .search{
+
+
+}
+.intro{
+    padding: 2rem;
+    text-align: center;
+    background-color: #fafafa;
+    font-weight: 300;
+}
+.text_title h2{
+    margin: 0;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+
+
+}
+/* le sous titre  */
+.text_subtitle {
+    font-size: 1.2rem;
+    color: var(--gris-foncé);
+    padding: 1rem 0 3rem 0;
+    opacity: 0.8;
+
+}
+/* le bouton pour explorer les restaurants  */
+.btn{
+    border: 0;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,var(--violet),var(--rose));
+    cursor: pointer;
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+}
+
+/* FONCTIONNEMENT BOUTON */
+
+#functionning_button{
+    margin: 2rem;
+    padding: 1rem 0 1rem 0 ;
+}
+
+.functionning_title{
+    padding-bottom: 1rem;
+}
+
+.buttons{
+padding: 2rem 0 2rem 0;
+gap: 1rem;
+}
+.button{
+    border: 0;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #000;
+    background-color: #F6F6F6;
+    cursor: pointer;
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    margin-bottom: 2rem;
+}
+.button_number{
+    display: flex;
+    float: left;
+
+
+}
+.button_icon{
+    display: flex;
+    float: left;
+    padding: 0 1rem 0 1rem ;
+    color: var(--gris-clair_clair);
+
+}
+.icon3{
+    color: var(--violet-clair);
+}
+.button_text{
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* RESTAURANTS */
+
+figure{
+    border: none;
+
+}
+img{
+    max-width: 220px;
+    max-height: 150px;
+}
+
+#restaurants{
+
+    border-radius: 15px;
+    width: 62%;
+    padding: 20px;
+    display: flex;
+}
+figure{
+    flex: 25%;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 20px;
+    box-shadow: 0 5px 16px;
+}
