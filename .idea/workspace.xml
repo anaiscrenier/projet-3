@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa833a8d-bfc7-43dc-925d-afb48a23204e" name="Changes" comment="" />
+    <list default="true" id="fa833a8d-bfc7-43dc-925d-afb48a23204e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/menu/a_la_française.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu/la_palette_du_goût.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu/le_delice_des_sens.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/la palette du goût.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/la_note_enchantee.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/la_note_enchantee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/le delice des sens.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/À la française.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +79,12 @@
       <workItem from="1637332642267" duration="647000" />
       <workItem from="1637338163769" duration="90000" />
       <workItem from="1637342719542" duration="30000" />
-      <workItem from="1637342757302" duration="923000" />
+      <workItem from="1637342757302" duration="2186000" />
+      <workItem from="1637398059210" duration="3170000" />
+      <workItem from="1637683728394" duration="12081000" />
+      <workItem from="1637739304627" duration="10955000" />
+      <workItem from="1637779804272" duration="1505000" />
+      <workItem from="1637855188601" duration="3808000" />
     </task>
     <servers />
   </component>
