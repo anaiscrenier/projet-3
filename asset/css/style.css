@@ -36,7 +36,7 @@ wrap {
     align-items: center;
     height: auto;
     padding: 20px;
-    box-shadow: inset 0px 6px 15px -5px #353535;
+    box-shadow: inset 0px 6px 15px -5px #b5b2b2;
 
 }
 .container input[type="search"]{
@@ -99,10 +99,52 @@ wrap {
 }
 
 .buttons{
-    gap: 1rem;
+    gap: 2rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: center;
 }
 .button{
     border: 0;
@@ -124,17 +166,20 @@ wrap {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    position: relative;
+    right: 11%;
 }
 .button_number p{
     text-align: center;
     line-height: 30px;
+    color: white;
 }
 
 
 .button_icon{
     display: flex;
     float: left;
-    padding: 0 1rem 0 1rem ;
+  padding-right: 10px;
     color: var(--gris-clair_clair);
 
 }
@@ -150,12 +195,16 @@ wrap {
 .content{
     justify-content: space-between;
 }
-
+.titre_restaurants{
+    padding-left: 10px;
+}
 #restaurants{
     border-radius: 15px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    object-fit: cover;
+    background-color: #f6f6f6;
+    padding-bottom: 57px;
+    padding-top: 57px;
 }
 .p_menu .nouveau{
     position: absolute;
@@ -216,8 +265,12 @@ figure img{
     transition-duration: 0.1s;
     cursor: pointer;
     width: 100%;
-    height: 131px;
+    height: 166px;
     object-fit: cover;
+}
+.bloc-menu .titre_restaurants{
+    font-size: 31px;
+    font-weight: bold;
 }
 .bloc-menu a{
     text-decoration: none;
@@ -246,7 +299,7 @@ footer{
 #menu_footer h2{
     color: white;
     font-family: Shrikhand;
-    font-size: 16px;
+    font-size: 22px;
     padding-bottom: 1rem;
 
 }
@@ -257,23 +310,27 @@ footer{
     padding: 10px;
     color: white;
 }
-.icon1_footer i{
 
-}
-.icon2_footer{
+.icon1_footer a i {
     display: flex;
-    flex-direction: column;
-    padding: 10px;
-    color: white;
+}
+.icon1_footer a {
+    padding-bottom: 10px;
+}
+
+.icon1_footer h3{
+    padding-left: 10px;
 }
 ul li {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     color: white;
     text-decoration: none;
     list-style-type: none;
 
+}
+.contact{
+    padding-bottom: 10px;
 }
 
 /*la note enchantée*/
@@ -428,39 +485,8 @@ a{
     .buttons{
         flex-direction: row;
     }
-    .icon_coeur{
 
-    }
-
-    .p_menu1 .nouveau{
-        position: absolute;
-        left: 450px;
-        top: 17px;
-        color: var(--vert-foncé);
-        background-color: var(--vert-clair);
-        border-radius: 2px;
-        padding: 6px ;
-    }
-
-    .p_menu2 .nouveau{
-        position: absolute;
-        left: 450px;
-        top: 17px;
-        color: var(--vert-foncé);
-        background-color: var(--vert-clair);
-        border-radius: 2px;
-        padding: 6px ;
-    }
-    .p_menu3 .nouveau{
-        position: absolute;
-        left: 450px;
-        top: 17px;
-        color: var(--vert-foncé);
-        background-color: var(--vert-clair);
-        border-radius: 2px;
-        padding: 6px ;
-    }
-    .p_menu4 .nouveau{
+    .p_menu .nouveau{
         position: absolute;
         left: 450px;
         top: 17px;
@@ -482,4 +508,3 @@ a{
     }
 
 }
-
