@@ -7,12 +7,8 @@
     <list default="true" id="fa833a8d-bfc7-43dc-925d-afb48a23204e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/a_la_française.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/a_la_française.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/la_note_enchantee.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/la_note_enchantee.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/la_palette_du_goût.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/la_palette_du_goût.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/le_delice_des_sens.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/le_delice_des_sens.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +81,10 @@
       <workItem from="1637855188601" duration="4406000" />
       <workItem from="1638184977972" duration="8521000" />
       <workItem from="1638288805773" duration="501000" />
+      <workItem from="1638295794273" duration="48000" />
+      <workItem from="1638374713660" duration="6519000" />
+      <workItem from="1638469909547" duration="4321000" />
+      <workItem from="1638810683235" duration="2013000" />
     </task>
     <servers />
   </component>

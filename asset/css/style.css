@@ -100,47 +100,6 @@ wrap {
 
 .buttons{
     gap: 2rem;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -205,11 +164,12 @@ wrap {
     background-color: #f6f6f6;
     padding-bottom: 57px;
     padding-top: 57px;
+
 }
 .p_menu .nouveau{
     position: absolute;
-    left: 284px;
-    top: 17px;
+    left: 281px;
+    bottom: 204px;
     color: var(--vert-foncé);
     background-color: var(--vert-clair);
     border-radius: 2px;
@@ -244,11 +204,24 @@ wrap {
     font-weight: 200;
 
 }
-.bloc-menu{
+#bloc-menu{
     border-radius: 20px;
     padding: 5px;
     box-sizing: border-box;
     margin: 20px;
+
+}
+#bloc-menu .titre_restaurants{
+    font-size: 31px;
+    font-weight: bold;
+}
+#bloc-menu a{
+    text-decoration: none;
+    color: black;
+}
+.restaurant_img{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 figure {
@@ -268,69 +241,13 @@ figure img{
     height: 166px;
     object-fit: cover;
 }
-.bloc-menu .titre_restaurants{
-    font-size: 31px;
-    font-weight: bold;
-}
-.bloc-menu a{
-    text-decoration: none;
-    color: black;
 
-}
 figcaption{
     width: 100%;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
     display: flex;
-}
-
-
-/*FOOTER*/
-footer{
-    width: 100%;
-    display: flex;
-    background-color: #353535;
-    flex-wrap: wrap;
-    padding: 1.5rem 0 0 1.5rem;
-
-}
-
-#menu_footer h2{
-    color: white;
-    font-family: Shrikhand;
-    font-size: 22px;
-    padding-bottom: 1rem;
-
-}
-
-.icon1_footer {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    color: white;
-}
-
-.icon1_footer a i {
-    display: flex;
-}
-.icon1_footer a {
-    padding-bottom: 10px;
-}
-
-.icon1_footer h3{
-    padding-left: 10px;
-}
-ul li {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-
-}
-.contact{
-    padding-bottom: 10px;
 }
 
 /*la note enchantée*/
@@ -414,12 +331,14 @@ a{
     box-sizing: border-box;
     background-color: #ffffff;
     margin: 1rem 0 12px 0;
-    padding: 0 0 15px 0;
     cursor: pointer;
     align-items: center;
     width: 100%;
+    height: 70px;
     border-radius: 1.5rem;
     box-shadow: 3px 3px 10px #dedada;
+    display: flex;
+    overflow: hidden;
 
 }
 
@@ -434,8 +353,7 @@ a{
     font-weight: bold;
     font-family: "roboto",sans-serif;
     padding: 1.3rem 0 0.5rem 0;
-    margin: 0;
-    overflow: hidden;
+
 }
 
 .sous_titre_menu1{
@@ -446,23 +364,25 @@ a{
   .price{
     font-size: 14px;
     font-weight: bold;
-    padding-right: 0.5rem;
+      margin-right: 20px;
+}
+.menu1:hover .animation {
+    width: 50px;
 }
 
-  .animation{
+.animation{
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #99e2d0;
-      top: 0;
-      left: 100%;
-      width: 20%;
-      height: 100%;
+      width:0;
+      height: 70px;
       border-radius: 0 1.5rem 1.5rem 0;
       color: #ffffff;
       font-size: 20px;
-
   }
+
+  /*COMMANDER*/
  .button_menu1{
      text-align: center;
      cursor: pointer;
@@ -480,31 +400,78 @@ a{
      box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
  }
 
+/*FOOTER*/
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #353535;
+    flex-wrap: wrap;
+    padding: 1.5rem 0 0 1.5rem;
+
+}
+
+#menu_footer h2{
+    color: white;
+    font-family: Shrikhand;
+    font-size: 22px;
+    padding-bottom: 1rem;
+
+}
+
+.icon1_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.icon1_footer a i {
+    display: flex;
+}
+.icon1_footer a {
+    padding-bottom: 10px;
+}
+
+.icon1_footer h3{
+    padding-left: 10px;
+}
+ul li {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.contact{
+    padding-bottom: 10px;
+}
+
 @media screen and (min-width: 768px){
 
     .buttons{
         flex-direction: row;
     }
 
-    .p_menu .nouveau{
-        position: absolute;
-        left: 450px;
-        top: 17px;
-        color: var(--vert-foncé);
-        background-color: var(--vert-clair);
-        border-radius: 2px;
-        padding: 6px ;
+}
+
+@media screen and (min-width: 1024px){
+    .restaurant_img{
+        flex-direction: row;
+        gap: 2rem;
+        margin-left: 38px;
+    }
+    #bloc-menu{
+        margin-left: inherit;
     }
 
-    figure {
-        border-radius: 20px;
-        box-sizing: border-box;
-        box-shadow: 0 5px 16px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        display: flex;
-        margin-top: 30px;
-        position: relative;
+    figure{
+        width: 433px;
+        height: auto;
+        flex-direction: column;
+    }
+    .p_menu .nouveau{
+        left: 354px;
     }
 
 }
