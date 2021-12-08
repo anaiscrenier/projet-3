@@ -185,16 +185,13 @@ wrap {
 }
 .icon_coeur .coeur_plein{
     position: absolute;
-    opacity: 0;
     transition-duration: 500ms;
     transform: scale(0);
 }
 .icon_coeur .coeur_vide{
-    opacity: 1;
     transition-duration: 500ms;
 }
 .icon_coeur:hover .coeur_plein{
-    opacity: 1;
     transform: scale(1);
 }
 .icon_coeur:hover .coeur_vide{
@@ -447,18 +444,18 @@ ul li {
 }
 
 @media screen and (min-width: 768px){
-
     .buttons{
         flex-direction: row;
+        flex-wrap: wrap;
     }
-
 }
 
 @media screen and (min-width: 1024px){
     .restaurant_img{
         flex-direction: row;
         gap: 2rem;
-        margin-left: 38px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     #bloc-menu{
         margin-left: inherit;
@@ -472,5 +469,45 @@ ul li {
     .p_menu .nouveau{
         left: 354px;
     }
+    .buttons{
+        flex-wrap:inherit;
+    }
 
+}
+
+.menu1:nth-child(1){
+    animation: menu1animation 1s linear backwards;
+    -webkit-animation: menu1animation 1s linear backwards;
+    opacity: 1;
+}
+.menu1:nth-child(2){
+    animation: menu1animation 1s linear backwards;
+    -webkit-animation: menu1animation 1s linear backwards;
+    opacity:1 ;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.menu1:nth-child(3){
+    animation: menu1animation 1s linear backwards ;
+    -webkit-animation: menu1animation 1s linear backwards ;
+    opacity: 1;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@keyframes menu1animation {
+   0%{
+       opacity: 0;
+   }
+    100%{
+        opacity: 1;
+    }
+}
+-webkit-@keyframes menu1animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
