@@ -168,7 +168,8 @@ wrap {
 }
 .p_menu .nouveau{
     position: absolute;
-    left: 281px;
+    right: 0;
+    margin-right: 15px;
     bottom: 204px;
     color: var(--vert-foncé);
     background-color: var(--vert-clair);
@@ -208,7 +209,6 @@ wrap {
     border-radius: 20px;
     padding: 5px;
     box-sizing: border-box;
-    margin: 20px;
 
 }
 #bloc-menu .titre_restaurants{
@@ -221,15 +221,13 @@ wrap {
 }
 .restaurant_img{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 figure {
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0 5px 16px;
-    flex-wrap: wrap;
-    display: flex;
     margin-top: 30px;
     position: relative;
 }
@@ -349,17 +347,18 @@ a{
 }
 .titre_menu1 h2{
     width: 100%;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: bold;
     font-family: "roboto",sans-serif;
-    padding: 1.3rem 0 0.5rem 0;
+    padding:5px
 
 }
 
 .sous_titre_menu1{
     display: flex;
     justify-content: space-between;
-    padding: 0 1.5rem 0 12px;
+    padding: 5px;
+    color: #606060;
 }
   .price{
     font-size: 14px;
