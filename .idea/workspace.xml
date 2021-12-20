@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa833a8d-bfc7-43dc-925d-afb48a23204e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/a_la_française.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/a_la_française.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/la_note_enchantee.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/la_note_enchantee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/la_palette_du_goût.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/la_palette_du_goût.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/le_delice_des_sens.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/le_delice_des_sens.html" afterDir="false" />
-    </list>
+    <list default="true" id="fa833a8d-bfc7-43dc-925d-afb48a23204e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +92,7 @@
       <workItem from="1639491615294" duration="6470000" />
       <workItem from="1639570990964" duration="8754000" />
       <workItem from="1639671335148" duration="6186000" />
-      <workItem from="1640017945044" duration="5000000" />
+      <workItem from="1640017945044" duration="5446000" />
     </task>
     <servers />
   </component>
