@@ -86,6 +86,10 @@ wrap {
     transition-duration: .25s;
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
 }
+.btn:hover{
+    background-image: linear-gradient(0deg, rgb(164, 97, 253), rgb(255, 130, 222));
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 70%);
+}
 
 /* FONCTIONNEMENT BOUTON */
 
@@ -120,6 +124,11 @@ wrap {
     display: flex;
     align-items: center;
 }
+.button:hover{
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    background-color: rgba(246, 246, 246, 0.85);
+}
 .button_number{
     background-color: #915FDD;
     width: 30px;
@@ -138,7 +147,7 @@ wrap {
 .button_icon{
     display: flex;
     float: left;
-  padding-right: 10px;
+    padding-right: 10px;
     color: var(--gris-clair_clair);
 
 }
@@ -198,6 +207,29 @@ wrap {
     opacity: 0;
 }
 
+
+                                                /* COEUR MENUS*/
+
+.icon_coeur_menu{
+    font-size: 25px;
+    padding-right: 27px;
+}
+.icon_coeur_menu .coeur_plein_menu{
+    position: absolute;
+    transition-duration: 500ms;
+    transform: scale(0);
+}
+.icon_coeur_menu .coeur_vide_menu{
+    transition-duration: 500ms;
+}
+.icon_coeur_menu:hover .coeur_plein_menu{
+    transform: scale(1);
+}
+.icon_coeur_menu:hover .coeur_vide_menu{
+    opacity: 0;
+}
+
+
 .wrap h2{
     font-weight: 200;
 
@@ -251,6 +283,13 @@ figcaption{
     top: 1.5rem;
     left: 1rem;
     font-size: 17px;
+    cursor: pointer;
+}
+.retour i:hover{
+    opacity: 1;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.65);
+
 }
 
 a{
@@ -275,6 +314,8 @@ a{
     padding: 2.4rem 0 0 1.5rem;
     margin-top: -2rem;
     background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
 }
 .titre-menu h2{
     font-size: 20px;
@@ -357,44 +398,102 @@ a{
     padding: 5px;
     color: #606060;
 }
-  .price{
+.price{
     font-size: 14px;
     font-weight: bold;
-      margin-right: 20px;
+    margin-right: 20px;
 }
 .menu1:hover .animation {
     width: 50px;
 }
 
 .animation{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #99e2d0;
-      width:0;
-      height: 70px;
-      border-radius: 0 1.5rem 1.5rem 0;
-      color: #ffffff;
-      font-size: 20px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    width:0;
+    height: 70px;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #ffffff;
+    font-size: 20px;
+}
 
-  /*COMMANDER*/
- .button_menu1{
-     text-align: center;
-     cursor: pointer;
-     margin: 4.5rem 0 4.5rem 0 ;
- }
- .btn_menu1{
-     border: 0;
-     padding: 1rem 3.5rem;
-     border-radius: 100px;
-     color: #fff;
-     background-color: #686868;
-     background-image: linear-gradient(0deg,var(--violet),var(--rose));
-     cursor: pointer;
-     transition-duration: .25s;
-     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
- }
+/*COMMANDER*/
+.button_menu1{
+    text-align: center;
+    cursor: pointer;
+    margin: 4.5rem 0 4.5rem 0 ;
+}
+.btn_menu1{
+    border: 0;
+    padding: 1rem 3.5rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,var(--violet),var(--rose));
+    cursor: pointer;
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+}
+.btn_menu1:hover{
+    background-image: linear-gradient(0deg, rgb(164, 97, 253), rgb(255, 130, 222));
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 70%);
+}
+
+.body_contact{
+    background-color: #cccbcb;
+    color: white;
+}
+/* contact */
+.wrap3{
+    max-width: 500px;width:100%;margin: 0 auto;
+}
+/* contact */
+#contact {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+#contact h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+#contact input, #contact textarea{
+    width:100%;
+    padding: 1rem;
+    background-color: #ffffff;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 1.3rem;
+}
+#contact textarea {
+    resize: none;
+    min-height: 100px;
+}
+#contact input[type=submit] {
+    cursor: pointer;
+    transition: all .5s;
+}
+#contact input[type=submit]:hover {
+    background-color: var(--gris-clair);
+    color:#fff;
+}
+
+.btn_contact{
+    border: 0;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image:linear-gradient(172deg, #FF79DA 7%, #99E2D0 51%, #9356DC 75% );
+    cursor: pointer;
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+}
+
+
 
 /*FOOTER*/
 footer{
@@ -427,9 +526,15 @@ footer{
 .icon1_footer a {
     padding-bottom: 10px;
 }
+.icon1_footer a:hover{
+    color: rgba(255, 255, 255, 0.55);
+}
 
-.icon1_footer h3{
+.text_footer{
     padding-left: 10px;
+}
+.text_footer1{
+    padding-left: 4px;
 }
 ul li {
     display: flex;
@@ -442,6 +547,8 @@ ul li {
 .contact{
     padding-bottom: 10px;
 }
+
+/*MEDIA-QUERIES*/
 
 @media screen and (min-width: 768px){
     .buttons{
@@ -475,19 +582,26 @@ ul li {
 
 }
 
-.menu1:nth-child(1){
+/*KEYFRAMES*/
+
+
+/*MENU*/
+
+.menu1 :nth-child(1){
     animation: menu1animation 1s linear backwards;
     -webkit-animation: menu1animation 1s linear backwards;
     opacity: 1;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
-.menu1:nth-child(2){
+.menu1 :nth-child(2){
     animation: menu1animation 1s linear backwards;
     -webkit-animation: menu1animation 1s linear backwards;
     opacity:1 ;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
-.menu1:nth-child(3){
+.menu1 :nth-child(3){
     animation: menu1animation 1s linear backwards ;
     -webkit-animation: menu1animation 1s linear backwards ;
     opacity: 1;
@@ -496,18 +610,178 @@ ul li {
 }
 
 @keyframes menu1animation {
-   0%{
-       opacity: 0;
-   }
-    100%{
-        opacity: 1;
-    }
-}
--webkit-@keyframes menu1animation {
     0%{
         opacity: 0;
     }
     100%{
         opacity: 1;
+    }
+}
+-webkit-@keyframes menu1animation {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+}
+
+/* ROTATION DU CHECK */
+
+
+.animation  #icon_check:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check1:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check2:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check3:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check4:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check5:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check6:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check7:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check8:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.animation  #icon_check9:hover {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-12-15 20:25:47
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*LOADER*/
+.loader_spinner{
+    height: 100%;
+    z-index: -3;
+
+}
+
+.loader {
+    background-color: white;
+    background-image :linear-gradient(172deg, #FF79DA 7%, #99E2D0 51%, #9356DC 75% );
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: loader 2s linear;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+
+}
+
+@-webkit-keyframes spinner{
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes spinner{
+
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+.container_page{
+    opacity: 1;
+    animation: spinner 2s ;
+}
+
+
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg)
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(360deg)
+
     }
 }

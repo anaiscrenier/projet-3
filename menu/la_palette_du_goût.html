@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu - La Palette du goût</title>
 
     <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,18 +29,19 @@
 </header>
 
 <div class="page_menu_block">
-    <img class="page_menu_img" src="../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp">
+    <img class="page_menu_img" src="../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp " alt="image_page_menu">
 </div>
 
 <div class="titre-menu">
     <h2>La palette du goût</h2>
-    <div class="icon_coeur_transparent">
-        <i class= "far fa-heart" aria-hidden="true"></i>
-    </div>
-    <div class="icon_coeur_rempli">
-        <i class= "fas fa-heart fa-gradient" aria-hidden="true"></i>
+    <div class="icon_coeur_menu">
+        <i class= "fas fa-heart fa-gradient coeur_plein_menu"></i>
+        <i class= "far fa-heart coeur_vide_menu"></i>
     </div>
 </div>
+
+
+
 
 
 <!--ENTRÉES-->
@@ -55,9 +57,10 @@
                 <h2>Fricassée d'escargot</h2>
                 <p class="sous_titre_menu1">Au piment d'espelette </p>
             </div>
-                <div class="price">25€</div>
-            <div class="animation">
-                    <i class="fas fa-check-circle"></i>
+            <div class="price">25€</div>
+
+            <div class="animation ">
+                <i id="icon_check" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
 
@@ -67,9 +70,9 @@
                 <p class="sous_titre_menu1">Et ses copeaux de truffe noire</p>
             </div>
 
-                <div class="price">35€</div>
+            <div class="price">35€</div>
             <div class="animation">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <i id="icon_check1" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
 
@@ -78,9 +81,9 @@
                 <h2>Oeuf au plat</h2>
                 <p class="sous_titre_menu1">Assaisonné à la truffe sur de....e</p>
             </div>
-                <div class="price">20€</div>
+            <div class="price">20€</div>
             <div class="animation">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <i id="icon_check2" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
 
@@ -101,9 +104,9 @@
                 <h2>Filet de boeuf aux herbes</h2>
                 <p class="sous_titre_menu1">Accompagné de sa ribambelle de légu...</p>
             </div>
-                <div class="price">40€</div>
+            <div class="price">40€</div>
             <div class="animation">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <i id="icon_check3" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
 
@@ -113,9 +116,9 @@
                 <p class="sous_titre_menu1">À la truffe noire sur sa purée de panais</p>
             </div>
 
-                <div class="price">35€</div>
+            <div class="price">35€</div>
             <div class="animation">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <i id="icon_check4" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
 
@@ -128,7 +131,7 @@
 
             <div class="price">44€</div>
             <div class="animation">
-                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <i id="icon_check5" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -145,9 +148,9 @@
                 <p class="sous_titre_menu1">Revisité</p>
             </div>
 
-                <div class="price">18€</div>
+            <div class="price">18€</div>
             <div class="animation">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <i id="icon_check6" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
 
@@ -157,9 +160,9 @@
                 <p class="sous_titre_menu1">Et glace à la vaille de Madagascar</p>
             </div>
 
-                <div class="price">22€</div>
+            <div class="price">22€</div>
             <div class="animation">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                 <i id="icon_check7" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
 
@@ -168,9 +171,9 @@
                 <h2>Mousse au chocolat</h2>
                 <p class="sous_titre_menu1">Au piment d'espelette et à la truffe noire</p>
             </div>
-                <div class="price">23€</div>
+            <div class="price">23€</div>
             <div class="animation">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <i id="icon_check8" class="fas fa-check-circle" aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -184,16 +187,19 @@
         <h2>ohmyfood</h2>
         <div class="icon1_footer">
             <a href="#">
-                <i class="fas fa-utensils"><h3>Proposer un restaurant</h3></i>
+                <i class="fas fa-utensils"></i>
+                    <h3 class="text_footer">Proposer un restaurant</h3>
             </a>
             <a href="#">
-                <i class="fas fa-hands-helping"> <h3>Devenir partenaire</h3></i>
+                <i class="fas fa-hands-helping"></i>
+                    <h3 class="text_footer1">Devenir partenaire</h3>
             </a>
             <ul>
                 <li><a href="#"><h3>Mentions légales</h3></a></li>
-                <li><a href="#"><h3 class="contact">Contact</h3></a></li>
+                <li><a href="mailto:anais000@hotmail.fr"><h3>Contact</h3></a></li>
             </ul>
         </div>
+
     </section>
 
 </footer>
