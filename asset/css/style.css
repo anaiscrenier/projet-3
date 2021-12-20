@@ -525,6 +525,7 @@ footer{
 }
 .icon1_footer a {
     padding-bottom: 10px;
+    display: flex;
 }
 .icon1_footer a:hover{
     color: rgba(255, 255, 255, 0.55);
