@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa833a8d-bfc7-43dc-925d-afb48a23204e" name="Changes" comment="" />
+    <list default="true" id="fa833a8d-bfc7-43dc-925d-afb48a23204e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/la_palette_du_goût.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/la_palette_du_goût.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/le_delice_des_sens.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/le_delice_des_sens.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -93,6 +99,11 @@
       <workItem from="1639570990964" duration="8754000" />
       <workItem from="1639671335148" duration="6186000" />
       <workItem from="1640017945044" duration="6709000" />
+      <workItem from="1640024877419" duration="297000" />
+      <workItem from="1640115686646" duration="1474000" />
+      <workItem from="1640166764881" duration="8675000" />
+      <workItem from="1640266747995" duration="636000" />
+      <workItem from="1640267395167" duration="5244000" />
     </task>
     <servers />
   </component>

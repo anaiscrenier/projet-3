@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
+
 }
 :root{
     --violet:#9356DC;
@@ -14,11 +15,9 @@
     --gris-clair_clair:#7E7E7E;
     --violet-clair: #915FDD;
 }
-wrap {
+.wrap {
     width:100%;
-    max-width: 1040px;
     margin:0 auto;
-    padding: 0 1rem;
 }
 
 /* logo */
@@ -100,6 +99,9 @@ wrap {
 
 .functionning_title{
     padding-bottom: 1rem;
+    font-size: 27px;
+    font-weight: 600;
+
 }
 
 .buttons{
@@ -185,6 +187,7 @@ wrap {
     border-radius: 2px;
     padding: 6px ;
     font-size: 14px;
+
 }
 
 
@@ -229,11 +232,10 @@ wrap {
     opacity: 0;
 }
 
-
 .wrap h2{
-    font-weight: 200;
-
+    font-weight: 400;
 }
+
 #bloc-menu{
     border-radius: 20px;
     padding: 5px;
@@ -241,7 +243,7 @@ wrap {
 
 }
 #bloc-menu .titre_restaurants{
-    font-size: 31px;
+    font-size: 27px;
     font-weight: bold;
 }
 #bloc-menu a{
@@ -319,7 +321,7 @@ a{
 }
 .titre-menu h2{
     font-size: 20px;
-    font-family: "Shrikhand",sans-serif;
+    font-family: 'Shrikhand', sans-serif;
 }
 .icon_coeur_transparent{
     position: absolute;
@@ -377,7 +379,10 @@ a{
     overflow: hidden;
 
 }
-
+.menu1:hover .icon_check{
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
 
 .titre_menu1{
     width: 100%;
@@ -388,15 +393,21 @@ a{
     font-size: 18px;
     font-weight: bold;
     font-family: "roboto",sans-serif;
-    padding:5px
+    padding:5px ;
+    white-space : nowrap; /*pour ne pas aller a la ligne */
+    overflow : hidden;
+    text-overflow : ellipsis; /*point de suspension */
+
 
 }
 
 .sous_titre_menu1{
-    display: flex;
-    justify-content: space-between;
     padding: 5px;
     color: #606060;
+    white-space : nowrap; /*pour ne pas aller a la ligne */
+    overflow : hidden;
+    text-overflow : ellipsis; /*point de suspension */
+
 }
 .price{
     font-size: 14px;
@@ -417,6 +428,7 @@ a{
     border-radius: 0 1.5rem 1.5rem 0;
     color: #ffffff;
     font-size: 20px;
+    transition-duration: 500ms; /*animation*/
 }
 
 /*COMMANDER*/
@@ -507,7 +519,7 @@ footer{
 
 #menu_footer h2{
     color: white;
-    font-family: Shrikhand;
+    font-family: 'Shrikhand', sans-serif;
     font-size: 22px;
     padding-bottom: 1rem;
 
@@ -580,6 +592,13 @@ ul li {
     .buttons{
         flex-wrap:inherit;
     }
+    .page_menu{
+        flex-direction: row;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
 
 }
 
@@ -599,15 +618,15 @@ ul li {
     animation: menu1animation 1s linear backwards;
     -webkit-animation: menu1animation 1s linear backwards;
     opacity:1 ;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 .menu1 :nth-child(3){
     animation: menu1animation 1s linear backwards ;
     -webkit-animation: menu1animation 1s linear backwards ;
     opacity: 1;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
 
 @keyframes menu1animation {
@@ -618,7 +637,7 @@ ul li {
         opacity: 1;
     }
 }
--webkit-@keyframes menu1animation {
+@-webkit-keyframes menu1animation {
             0%{
                 opacity: 0;
             }
@@ -627,59 +646,9 @@ ul li {
             }
 }
 
-/* ROTATION DU CHECK */
+/*/* ROTATION DU CHECK */
 
-
-.animation  #icon_check:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check1:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check2:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check3:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check4:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check5:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check6:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check7:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check8:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-.animation  #icon_check9:hover {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-12-15 20:25:47
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info.
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
+ /* ----------------------------------------
  * animation rotate-center
  * ----------------------------------------
  */
@@ -708,8 +677,6 @@ ul li {
 /*LOADER*/
 .loader_spinner{
     height: 100%;
-    z-index: -3;
-
 }
 
 .loader {
@@ -726,7 +693,7 @@ ul li {
     left: 0;
     top: 0;
     margin: auto;
-
+    z-index: -3;
 }
 
 @-webkit-keyframes spinner{
@@ -755,8 +722,6 @@ ul li {
     }
 }
 
-
-
 .container_page{
     opacity: 1;
     animation: spinner 2s ;
@@ -770,7 +735,7 @@ ul li {
     }
     100% {
         opacity: 0;
-        webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
     }
 }
 
@@ -782,7 +747,7 @@ ul li {
 
     100% {
         opacity: 0;
-        transform: rotate(360deg)
+        transform: rotate(360deg);
 
     }
 }
