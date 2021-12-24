@@ -432,6 +432,10 @@ a{
 }
 
 /*COMMANDER*/
+.btn_menu{
+    padding: 15px;
+    background-color: #f6f6f6;
+}
 .button_menu1{
     text-align: center;
     cursor: pointer;
@@ -597,10 +601,10 @@ ul li {
         gap: 2rem;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 40px;
     }
 
 }
+
 
 /*KEYFRAMES*/
 
