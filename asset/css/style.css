@@ -111,6 +111,7 @@
     width: 100%;
     justify-content: center;
 }
+
 .button{
     border: 0;
     padding: 1rem 1.5rem;
@@ -129,8 +130,9 @@
 .button:hover{
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
     cursor: pointer;
-    background-color: rgba(246, 246, 246, 0.85);
+    background-color: rgba(246, 229, 255, 0.73);/*effet rose sur le hover*/
 }
+
 .button_number{
     background-color: #915FDD;
     width: 30px;
@@ -145,22 +147,19 @@
     color: white;
 }
 
-
 .button_icon{
     display: flex;
     float: left;
     padding-right: 10px;
     color: var(--gris-clair_clair);
-
 }
-.icon3{
-    color: var(--violet-clair);
+.button:hover .icon3{
+   color: #915FDD;
 }
 .button_text{
     font-family: 'roboto', sans-serif;
     font-size: 1.2rem;
 }
-
 /* RESTAURANTS */
 .content{
     justify-content: space-between;
